@@ -1,0 +1,25 @@
+# robots.txt for Mars Tactics
+User-agent: *
+Allow: /
+Allow: /news/
+Allow: /media/
+Allow: /guides/
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /static/favicon.ico
+Allow: /static/logo.png
+
+# Disallow admin and system directories
+Disallow: /admin/
+Disallow: /system/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+Disallow: /*?*
+
+# Sitemap location
+Sitemap: https://marstactics.com/sitemap.xml
+
+# Crawl delay for Yandex (not supported by Google)
+User-agent: Yandex
+Crawl-delay: 10 

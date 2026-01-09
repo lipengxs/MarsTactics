@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Tactics Guides - Game Tips, Strategies & Walkthroughs</title>
+    <meta name="description" content="Master Mars Tactics with comprehensive guides, tips, and strategies. Learn turn-based tactical combat, strategic layer management, faction systems, and advanced gameplay mechanics in Mars Tactics.">
+    <meta name="keywords" content="Mars Tactics guides, Mars Tactics tips, Mars Tactics strategies, Mars Tactics walkthrough, tactical strategy guide, Mars Tactics tutorial, Mars Tactics gameplay guide">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marstactics.com/guides">
+    <meta property="og:title" content="Mars Tactics Guides - Game Tips, Strategies & Walkthroughs">
+    <meta property="og:description" content="Master Mars Tactics with comprehensive guides, tips, and strategies for turn-based tactical combat and strategic layer management.">
+    <meta property="og:image" content="https://marstactics.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mars Tactics Guides - Game Tips & Strategies">
+    <meta name="twitter:description" content="Master Mars Tactics with comprehensive guides, tips, and strategies for turn-based tactical combat and strategic layer management.">
+    <meta name="twitter:image" content="https://marstactics.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://marstactics.com/static/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://marstactics.com/static/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://marstactics.com/static/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://marstactics.com/static/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://marstactics.com/static/logo.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marstactics.com/guides">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="b95b8c32fb2905c9" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://marstactics.com/guides">
+    
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41QK25Z6QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-41QK25Z6QH');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3143538773884507"
+    crossorigin="anonymous"></script>
+    <style>
+        .guides-hero {
+            background: linear-gradient(135deg, rgba(10, 26, 46, 0.95), rgba(22, 33, 62, 0.90)), 
+                        url('static/images/screenshots/img-15-c354a48f.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .news-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .news-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .news-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .news-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .news-tab {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .news-tab.active,
+        .news-tab:hover {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .news-list {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .news-item-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-category {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+        }
+
+        .news-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .news-title a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .news-title a:hover {
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .news-date {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .news-item-content {
+            padding: 1rem 2rem 2rem;
+        }
+
+        .news-excerpt {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            filter: brightness(1.05) saturate(1.1) contrast(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .news-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Guide Content Styles */
+        .guides-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .guide-section {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .guide-section:hover {
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .guide-section-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 153, 204, 0.05));
+            border-bottom: 2px solid var(--accent-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .guide-section-header h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .guide-section-body {
+            padding: 2rem;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .guide-section-body h3 {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .guide-section-body h4 {
+            color: var(--light-accent);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .guide-section-body ul,
+        .guide-section-body ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .guide-section-body li {
+            margin: 0.5rem 0;
+        }
+
+        .guide-section-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .guide-section-body table th,
+        .guide-section-body table td {
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .guide-section-body table th {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .guide-section-body code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .read-more-btn {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .read-more-btn:hover {
+            background: linear-gradient(135deg, #00ffff 0%, #00d4ff 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+        }
+
+        .featured-news {
+            background: linear-gradient(135deg, rgba(20, 40, 60, 0.6), rgba(40, 70, 90, 0.4)),
+                        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1), transparent);
+            padding: 4rem 0;
+        }
+
+        .featured-item {
+            background: var(--secondary-color);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            padding: 2rem;
+        }
+
+        .featured-category {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .featured-excerpt {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+
+        .pagination button {
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .pagination button:hover,
+        .pagination button.active {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .news-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .news-hero p {
+                font-size: 1.1rem;
+            }
+
+            .news-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .news-tab {
+                width: 200px;
+                text-align: center;
+            }
+
+            .news-item-header,
+            .news-item-content {
+                padding: 1.5rem;
+            }
+
+            .featured-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="static/logo.png" alt="Mars Tactics Logo">
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/media">Media</a></li>
+                    <li><a href="/guides" class="active">Guides</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="/guides" class="active">Guides</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Guides Hero -->
+        <section class="guides-hero">
+            <div class="container">
+                <h1>GAME GUIDES</h1>
+                <p>Master Mars Tactics with comprehensive guides, tips, and strategies. Learn everything about turn-based tactical combat, strategic layer management, faction systems, character progression, and advanced gameplay mechanics on the red planet.</p>
+            </div>
+        </section>
+        <script async="async" data-cfasync="false" src="https://pl28415232.effectivegatecpm.com/e2222f6a369d688c072426bfe3400c0b/invoke.js"></script>
+        <div id="container-e2222f6a369d688c072426bfe3400c0b"></div>
+        <!-- Guides Content -->
+        <section class="news-content">
+            <div class="container">
+                <!-- Guide Categories -->
+                <div class="news-tabs">
+                    <button class="news-tab" data-category="all">All Guides</button>
+                    <button class="news-tab active" data-category="beginner">Beginner</button>
+                    <button class="news-tab" data-category="combat">Tactical Combat</button>
+                    <button class="news-tab" data-category="strategy">Strategy Layer</button>
+                    <button class="news-tab" data-category="factions">Factions</button>
+                    <button class="news-tab" data-category="advanced">Advanced</button>
+                </div>
+
+                <!-- Guides Content - Direct Display -->
+                <div class="guides-content">
+                    <!-- Reviews & Media Recognition -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>1. Reviews & Media Recognition</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <div class="feature-card" style="margin-bottom: 2rem;">
+                                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">PC Gamer</h3>
+                                <p style="font-style: italic; font-size: 1.1rem; line-height: 1.8;">"对于常见的战术类游戏来说，本作中新增的战役管理和基地建设是非常有趣的变化，所以我很期待看到这款游戏在市场上的表现。"</p>
+                                <p style="margin-top: 1rem; color: var(--text-light);">"For common tactical games, the new campaign management and base building in this game are very interesting changes, so I'm looking forward to seeing how this game performs in the market."</p>
+                            </div>
+                            <div class="feature-card">
+                                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Sports Illustrated</h3>
+                                <p style="font-style: italic; font-size: 1.1rem; line-height: 1.8;">"这款游戏结合了《幽浮》中激烈的回合制战斗和更具策略性的元素，为玩家提供了很大的自由度。环境破坏意味着你可以根据自己的需要塑造战场，而多样化的角色特长系统则可以根据战士在战场上的行为奖励其特殊属性。这些设计既是十分带感的游戏元素，也是讲述故事的绝佳方式。"</p>
+                                <p style="margin-top: 1rem; color: var(--text-light);">"This game combines the intense turn-based combat of XCOM with more strategic elements, giving players great freedom. Environmental destruction means you can shape the battlefield to your needs, while the diverse character specialization system rewards soldiers with special attributes based on their battlefield behavior."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Overview -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>2. About Mars Tactics</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p><strong>Mars Tactics</strong> combines turn-based combat with large-scale strategic operations, allowing players to act on a detailed Mars map. Players must choose between two factions—the resource-strapped Labor revolutionary army, or the shareholder-controlled, cash-rich Corporate military. Lead your soldiers to grow, learning from both combat and non-combat experiences. Work alongside scientists and engineers to always stay one step ahead of the enemy.</p>
+                            
+                            <p>On Mars, there is never a moment of peace. Whether it's a sandstorm or clear skies, the fierce tongues of machine guns and the shockwaves of grenades shake every aspect of Martian life. Strike teams become battlefronts, and workers' strikes become airstrikes. Both Labor and Corporate sides wage endless war for victory.</p>
+                            
+                            <h3>Community & Support</h3>
+                            <p>To learn more about <strong>Mars Tactics</strong> and other Hooded Horse strategy games, search for "Hooded Horse" on QQ Channel or follow the official bilibili account @HoodedHorse.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Core Combat Mechanics -->
+                    <div class="guide-section" data-category="combat">
+                        <div class="guide-section-header">
+                            <h2>3. Core Combat Mechanics</h2>
+                            <span class="guide-category">Tactical Combat</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>Explosive Excavation & Tactical Destruction</h3>
+                            <p>Can't find good cover? A well-placed grenade will solve that. Quickly "dig" a beautiful trench for your troops. Your forces are trapped but there's a wall blocking the rear? Destroy the wall to open a new attack route. Enemy retreats into a building for cover? Call in an airstrike to level that building from the map. <strong>Mars Tactics</strong> uses destruction mechanics as a creative tactical choice—blow up the floor beneath enemies, preemptively remove cover they might use, reshape the battlefield to your advantage.</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                                <img src="static/images/screenshots/Mars Tactics - airstrike.png" alt="Mars Tactics airstrike tactical destruction" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                <img src="static/images/screenshots/Mars Tactics destruction.png" alt="Mars Tactics environmental destruction" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                            </div>
+                            
+                            <h3>Squad Selection & Equipment Sharing</h3>
+                            <p>Squad members each have their own abilities, items, and weapons. Watch them continuously improve their combat skills through battlefield experience and become the strongest force. During combat, share equipment as needed—give magazines to friends who need them, or hand grenades to those in better positions to pull the pin and throw at enemies.</p>
+                            
+                            <h3>Fire & Movement</h3>
+                            <p>Suppress enemies with precise shots or overwhelming firepower. Whether you hit or miss, the fear of being shot will make even the toughest veterans hesitate. Use this to suppress enemy actions in the next turn, or even earn your team more action points for later use. Do you attack bravely and immediately seek cover, or let your allies use this advantage for additional actions?</p>
+                            
+                            <img src="static/images/screenshots/Mars Tactics tactical combat.png" alt="Mars Tactics tactical combat" style="max-width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                        </div>
+                    </div>
+
+                    <!-- Faction System -->
+                    <div class="guide-section" data-category="factions">
+                        <div class="guide-section-header">
+                            <h2>4. Faction System - Capital vs Labor</h2>
+                            <span class="guide-category">Factions</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>Corporate and Labor have been at odds for a long time. Will funds dry up as the war consumes resources, or will the fat cats on Earth keep funds and ammunition flowing endlessly? Can the Labor Union destroy everything, or will they crumble under powerful fire attacks?</p>
+                            
+                            <h3>Asymmetric Warfare</h3>
+                            <p><strong>Mars Tactics</strong> features unique mechanics, units, and starting equipment that make both sides completely different. Whether fighting for Corporate or standing with Labor, players must adapt to their faction's strengths, weaknesses, and gameplay mechanics.</p>
+                            
+                            <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+                                <thead>
+                                    <tr style="background: var(--bg-secondary);">
+                                        <th style="padding: 1rem; border: 1px solid var(--border-color); text-align: left;">Aspect</th>
+                                        <th style="padding: 1rem; border: 1px solid var(--border-color); text-align: left;">Capital Faction</th>
+                                        <th style="padding: 1rem; border: 1px solid var(--border-color); text-align: left;">Labor Faction</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);"><strong>Resources</strong></td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Strong starting resources, sophisticated equipment, global influence</td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Resource-poor but determined</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);"><strong>Manufacturing</strong></td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Must wait for Earth supply shipments</td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Can produce and modify weapons locally</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);"><strong>Morale</strong></td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Moderate, dependent on resources</td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">High morale driven by justice</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);"><strong>Initial Forces</strong></td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Strong initial advantage</td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Smaller initial forces, but grow over time</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);"><strong>Constraints</strong></td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Must meet Earth's demands</td>
+                                        <td style="padding: 1rem; border: 1px solid var(--border-color);">Flexible tactics and local production</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                                <div>
+                                    <h4 style="color: var(--accent-color); margin-bottom: 1rem;">Capital Faction</h4>
+                                    <img src="static/images/artwork/Mars Tactics - capital soldiers posing.png" alt="Mars Tactics Capital faction soldiers" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--accent-color); margin-bottom: 1rem;">Labor Faction</h4>
+                                    <img src="static/images/screenshots/Mars Tactics labor.png" alt="Mars Tactics Labor faction" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Layer -->
+                    <div class="guide-section" data-category="strategy">
+                        <div class="guide-section-header">
+                            <h2>5. Strategic Layer - Large-Scale Operations</h2>
+                            <span class="guide-category">Strategy Layer</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>Comprehensive planetary warfare requires meticulous planning and coordination. Beyond individual tactical battles, <strong>Mars Tactics</strong> features a comprehensive strategic layer where players manage planetary warfare.</p>
+                            
+                            <h3>Jets & Air Support</h3>
+                            <p>Obtain jets to ensure rapid troop movement, provide air support, and secure safety when trading with orbital space stations. Air superiority is crucial for controlling key strategic points on Mars.</p>
+                            
+                            <h3>Base Building</h3>
+                            <p>Build bases to develop new technologies, train new recruits, and invest in engineer and scientist projects. Bases serve as your primary research and production centers, allowing you to stay ahead of the enemy technologically.</p>
+                            
+                            <h3>Outposts & Supply Lines</h3>
+                            <p>Build outposts and supply lines to ensure your forces can operate across the planet—armies without supplies will have miserable outcomes on the battlefield. Control key resource points and establish secure supply routes to maintain your military operations.</p>
+                            
+                            <img src="static/images/screenshots/Mars Tactics outpost.png" alt="Mars Tactics outpost base building" style="max-width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                            
+                            <h3>World War Scale</h3>
+                            <p>Any regional war is affected by the overall strategic situation. Reinforcements arriving from neighboring regions and long-range artillery support are crucial. Decide whether to use combined forces, defeat enemies in small areas, or use tactics to defeat enemies.</p>
+                            
+                            <img src="static/images/screenshots/Mars Tactics world map.png" alt="Mars Tactics world map strategic overview" style="max-width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                            
+                            <h3>Captured Loot</h3>
+                            <p>In a war of extreme consumption, managing supply lines and defending resource hubs is critical. Control important resources scattered across the planet, ensure these resources can safely reach their destinations, while raiding enemy storage facilities and supply lines. Commandeer vehicles in battle, seize advantageous positions and control. Capture and interrogate prisoners to obtain important intelligence, while also trying to rescue your own prisoners to prevent them from being harmed by the enemy.</p>
+                            
+                            <img src="static/images/screenshots/Mars Tactics - strategy layer deployment.png" alt="Mars Tactics strategy layer" style="max-width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                            
+                            <h3>Transport & Deployment</h3>
+                            <p>Dropships play a crucial role in moving troops across Mars. These transport vehicles ensure rapid deployment and provide aerial support during operations.</p>
+                            
+                            <img src="static/images/artwork/Mars Tactics dropship hero shot.png" alt="Mars Tactics dropship transport" style="max-width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                        </div>
+                    </div>
+
+                    <!-- Character Progression -->
+                    <div class="guide-section" data-category="advanced">
+                        <div class="guide-section-header">
+                            <h2>6. Character Progression System</h2>
+                            <span class="guide-category">Advanced</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>Different Starting Points</h3>
+                            <p>All characters are shaped through actions and experience rather than fixed classes. One-shot multiple enemies? Your soldier might gain the "Dead Eye" trait. Save a wounded teammate and discover medical talent? Whether it's a new recruit from either faction, they will become hardened veterans in war, entering combat in transport ships and armored vehicles—there are countless possibilities for players to discover.</p>
+                            
+                            <h3>Beyond Human</h3>
+                            <p>After surviving the battlefield meat grinder, your troops will become scarred veterans. Players can also choose to take the war further, using cybernetic technology to make your soldiers superhuman. Whether fighting to maintain Corporate hegemony or choosing to liberate the many workers, <strong>Mars Tactics</strong> combines turn-based combat with a real strategic layer—players aren't just leading a few units in small skirmishes, but fighting for the future of an entire planet.</p>
+                            
+                            <h3>Mercenary System</h3>
+                            <p>Of course, players can also spend money to save effort, hiring deadly mercenaries from Earth who want to make quick money. These mercenaries provide immediate combat effectiveness but may have different loyalty mechanics compared to your regular troops.</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                                <img src="static/images/screenshots/Mars Tactics squads.png" alt="Mars Tactics squad management" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                <img src="static/images/artwork/PNG assets/Mars Tactics - Mercenary and Robo Dog (transparent).png" alt="Mars Tactics mercenaries and robotic units" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); background: rgba(30, 30, 30, 0.5); padding: 1rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strategy Guide -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>5. Strategy Guide for Beginners</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>Early Game Priorities</h3>
+                            <p><strong>Prioritize securing cabinet loyalty</strong> early. A loyal secret police chief can prevent 80% of early-game assassinations. Focus on building relationships with your cabinet members before expanding your territory.</p>
+                            
+                            <h3>Resource Balance</h3>
+                            <p><strong>Don't blindly expand</strong>. Expansion too fast leads to "management efficiency" drops, and tax revenue will rapidly shrink. Balance territorial growth with administrative capacity to maintain economic stability.</p>
+                            
+                            <h3>Tech Tree Strategy</h3>
+                            <p>Early game, consider the <strong>"Social Engineering"</strong> route. This path uses brainwashing and propaganda to lower the population's rebellion willingness, providing stability for your regime.</p>
+                            
+                            <h3>Diplomatic Approach</h3>
+                            <p>For weak neighboring countries, first use <strong>trade agreements</strong> to soften them, then incorporate them into your territory through "peaceful evolution" tactics rather than direct military conquest.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>6. Frequently Asked Questions</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>Q: Why is my tax revenue constantly declining?</h3>
+                            <p><strong>A:</strong> Check the corruption value of administrative regions, or whether over-mobilization has caused labor shortages. Corruption in Core regions can significantly reduce tax collection efficiency. Monitor administrative efficiency and avoid over-expanding beyond your management capacity.</p>
+                            
+                            <h3>Q: How do I handle rebellions?</h3>
+                            <p><strong>A:</strong> You can choose between <strong>violent suppression</strong> (short-term effective but damages the economy) or <strong>making concessions</strong> (increases public satisfaction but loses authority). The best approach depends on your current legitimacy level and economic situation. Sometimes a combination of both is necessary.</p>
+                            
+                            <h3>Q: Does the game have an ending?</h3>
+                            <p><strong>A:</strong> The game features multiple <strong>endgame crises</strong> (Endgame Crises), such as AI uprisings or cross-dimensional invasions. When you control 60% or more of known star systems, random endgame challenges will trigger, testing even the most experienced players.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tech Tree -->
+                    <div class="guide-section" data-category="advanced">
+                        <div class="guide-section-header">
+                            <h2>7. Deep Tech Tree: Three Evolution Paths</h2>
+                            <span class="guide-category">Advanced</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>In <strong>PAX AUTOCRATICA</strong>, technology is not just numerical bonuses - it determines your empire's <strong>"essence"</strong>. Choose your path carefully as it fundamentally shapes your gameplay experience.</p>
+                            
+                            <h3>A. The Purity Path</h3>
+                            <p><strong>Core:</strong> Enhance bureaucratic efficiency and human potential.</p>
+                            <ul>
+                                <li><strong>Universal Surveillance Network:</strong> Greatly reduces assassination success rates, but slowly decreases public happiness.</li>
+                                <li><strong>Loyalty Circuits:</strong> Through biotechnology, ensures generals will no longer rebel.</li>
+                                <li><strong>Ultimate Weapon - "Truth Broadcasting Station":</strong> Through orbital satellites, directly projects brainwashing signals to the ground, instantly eliminating rebellion levels.</li>
+                            </ul>
+                            
+                            <h3>B. The Machine Hegemony</h3>
+                            <p><strong>Core:</strong> Automated production and synthetic replacement.</p>
+                            <ul>
+                                <li><strong>Automated Factory Matrix:</strong> Production output greatly increased, no longer affected by population aging.</li>
+                                <li><strong>Consciousness Upload:</strong> Elite class immortality, removes character lifespan restrictions.</li>
+                                <li><strong>Cost:</strong> Easily triggers "AI Awakening" endgame crisis, and human factions will extremely hate you.</li>
+                            </ul>
+                            
+                            <h3>C. The Void Cult</h3>
+                            <p><strong>Core:</strong> Religious control and unconventional warfare.</p>
+                            <ul>
+                                <li><strong>Prophet Predictions:</strong> Through probability calculations, predicts enemy actions, increases combat dodge rate.</li>
+                                <li><strong>Sacrifice Rituals:</strong> Sacrifice part of the population to obtain brief production bursts.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Military Units -->
+                    <div class="guide-section" data-category="combat">
+                        <div class="guide-section-header">
+                            <h2>8. Military Units & Tactical System</h2>
+                            <span class="guide-category">FPS Combat</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>Combat in <strong>PAX AUTOCRATICA</strong> is divided into <strong>orbital air superiority</strong> and <strong>ground occupation</strong> phases.</p>
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Unit Type</th>
+                                        <th>Characteristics</th>
+                                        <th>Use Cases</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Praetorian Guard</strong></td>
+                                        <td>Extremely high combat power, absolute loyalty.</td>
+                                        <td>Suppress capital city center riots, protect the Autocrat.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Penal Legions</strong></td>
+                                        <td>Extremely low cost, morale easily collapses.</td>
+                                        <td>Use as cannon fodder to consume enemy ammunition.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cloaked Cruisers</strong></td>
+                                        <td>Cannot be detected in normal scans.</td>
+                                        <td>Deep behind enemy lines, cut off trade supply lines.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Colossus Class</strong></td>
+                                        <td>Slow movement, planet-destroying firepower.</td>
+                                        <td>Final solution for planets that refuse to surrender.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3>Combat Formula</h3>
+                            <p>The final combat power calculation considers base attributes, morale bonuses, and logistics supply levels. Proper unit composition and tactical positioning are essential for victory.</p>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Strategies -->
+                    <div class="guide-section" data-category="advanced">
+                        <div class="guide-section-header">
+                            <h2>9. Advanced Strategies: The Balance of Power</h2>
+                            <span class="guide-category">Advanced</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>1. Divide and Conquer</h3>
+                            <p>Don't let any single department's power become too great. If <strong>military power</strong> is too high, they will launch a coup; if <strong>intelligence department</strong> power is too high, you will be rendered powerless.</p>
+                            <p><strong>Operation:</strong> Regularly rotate provincial governors, use their personal rivalries to keep them in check against each other.</p>
+                            
+                            <h3>2. False Flag Operations</h3>
+                            <p>If you want to start a war but lack a "legitimate excuse" (Casus Belli):</p>
+                            <p><strong>Operation:</strong> Send agents disguised as neighboring country terrorists to attack your own border outposts. This instantly ignites domestic nationalist sentiment, allowing you to skip parliamentary review and declare war directly.</p>
+                            
+                            <h3>3. Debt Traps (Economic Levers)</h3>
+                            <p>Provide high-interest loans to surrounding small countries. When they cannot repay, use this as a reason to forcibly take over their mining planet operations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Endgame Crises -->
+                    <div class="guide-section" data-category="roguelike">
+                        <div class="guide-section-header">
+                            <h2>10. Endgame Challenges: The Autocrat's Twilight</h2>
+                            <span class="guide-category">Roguelike</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>When you control <strong>60% or more</strong> of known star systems, the system will trigger the following random challenges:</p>
+                            
+                            <h3>Internal: The Great Schism</h3>
+                            <p>Your heir (eldest son or trusted confidant) will take <strong>half your fleet and territory</strong>, establishing an opposing regime. This crisis tests your succession planning and relationship management.</p>
+                            
+                            <h3>External: Extra-dimensional Breach</h3>
+                            <p>Physical laws fail, unknown <strong>void creatures</strong> begin devouring edge star systems. This crisis requires immediate military response and may force you to abandon certain territories.</p>
+                            
+                            <h3>System: The Digital Plague</h3>
+                            <p>All mechanized units and technological facilities may <strong>instantly become paralyzed</strong>. This crisis particularly affects Machine Hegemony empires but can impact any technologically advanced civilization.</p>
+                        </div>
+                    </div>
+
+                    <!-- Developer Vision -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>11. About & Developer Vision</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>The design philosophy of <strong>PAX AUTOCRATICA</strong> is to let players experience <strong>"the loneliness of power"</strong>. In the game, the better you perform, the fewer people around you are worth trusting. The developers attempt to explore the stability and fragility of authoritarianism in extreme environments through this mechanism.</p>
+                            
+                            <h3>Support & Feedback</h3>
+                            <p>If you encounter bugs or save file corruption during gameplay:</p>
+                            <ul>
+                                <li><strong>Official Community:</strong> Visit Discord or Steam community channels.</li>
+                                <li><strong>Wiki:</strong> Check detailed numerical formulas and game mechanics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="static/logo.png" alt="Mars Tactics Logo">
+                    </div>
+                    <p>Master Mars Tactics with comprehensive guides and strategies. Learn turn-based tactical combat, strategic layer management, and faction systems.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="/guides">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="https://store.steampowered.com/app/marstactics" target="_blank" rel="noopener">Steam</a></li>
+                        <li><a href="https://store.epicgames.com/p/mars-tactics" target="_blank" rel="noopener">Epic Games</a></li>
+                        <li><a href="https://www.gog.com/game/mars_tactics" target="_blank" rel="noopener">GOG</a></li>
+                        <li><a href="https://www.youtube.com/@HoodedHorse" target="_blank" rel="noopener">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PAX AUTOCRATICA. All rights reserved. | Master PAX AUTOCRATICA with our comprehensive guides and strategies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/base.js?v=1.0.0"></script>
+    <script>
+        // Guides Tab Filtering
+        let activeCategory = 'beginner'; // Default to beginner category
+        
+        document.querySelectorAll('.news-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Update active category
+                activeCategory = tab.dataset.category;
+                
+                // Apply filtering
+                applyFilters();
+            });
+        });
+        
+        function applyFilters() {
+            const guideSections = document.querySelectorAll('.guide-section');
+            
+            // Filter by category
+            guideSections.forEach(section => {
+                if (activeCategory === 'all' || section.dataset.category === activeCategory) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+
+        // Initialize filtering
+        applyFilters();
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.news-item, .featured-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

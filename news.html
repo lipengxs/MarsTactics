@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Tactics News - Latest Updates & Announcements</title>
+    <meta name="description" content="Stay updated with the latest Mars Tactics news, announcements, events, and updates. Get the newest information about turn-based tactical strategy, game updates, and community events in Mars Tactics.">
+    <meta name="keywords" content="Mars Tactics news, Mars Tactics updates, Mars Tactics announcements, Mars Tactics events, tactical strategy news, Mars Tactics latest info, turn-based game news">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marstactics.com/news">
+    <meta property="og:title" content="Mars Tactics News - Latest Updates & Announcements">
+    <meta property="og:description" content="Stay updated with the latest Mars Tactics news, announcements, events, and updates.">
+    <meta property="og:image" content="https://marstactics.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mars Tactics News - Latest Updates & Announcements">
+    <meta name="twitter:description" content="Stay updated with the latest Mars Tactics news, announcements, events, and updates.">
+    <meta name="twitter:image" content="https://marstactics.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://marstactics.com/static/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://marstactics.com/static/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://marstactics.com/static/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://marstactics.com/static/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://marstactics.com/static/logo.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marstactics.com/news">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="b95b8c32fb2905c9" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://marstactics.com/news">
+    
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41QK25Z6QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-41QK25Z6QH');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3143538773884507"
+    crossorigin="anonymous"></script>
+    <style>
+        .news-hero {
+            background: linear-gradient(135deg, rgba(10, 26, 46, 0.95), rgba(22, 33, 62, 0.90)), 
+                        url('static/images/maps/map-bgAllocationCenter.DC7jaEI5.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .news-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .news-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .news-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .news-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .news-tab {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .news-tab.active,
+        .news-tab:hover {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .news-list {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            background: var(--secondary-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: row;
+            min-height: 180px;
+        }
+
+        .news-item-body {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .news-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+        }
+
+        .news-item-thumbnail {
+            flex: 0 0 320px;
+            position: relative;
+            overflow: hidden;
+            background: var(--dark-accent);
+        }
+
+        .news-item-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .news-item:hover .news-item-thumbnail img {
+            transform: scale(1.05);
+        }
+
+        .news-item-details {
+            flex: 1;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .news-item-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-category {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+        }
+
+        .news-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .news-title a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .news-title a:hover {
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .news-date {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .news-item-content {
+            padding: 1rem 2rem 2rem;
+        }
+
+        .news-excerpt {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .news-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-publish-date {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-item-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .news-item-title:hover {
+            color: var(--accent-color);
+        }
+
+        .news-item-subtitle {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            opacity: 0.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .news-item-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: auto;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .video-duration {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .read-more-btn {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .read-more-btn:hover {
+            background: linear-gradient(135deg, #00ffff 0%, #00d4ff 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+        }
+
+        .featured-news {
+            background: linear-gradient(135deg, rgba(20, 40, 60, 0.6), rgba(40, 70, 90, 0.4)),
+                        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1), transparent);
+            padding: 4rem 0;
+        }
+
+        .featured-item {
+            background: var(--secondary-color);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            padding: 2rem;
+        }
+
+        .featured-category {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .featured-excerpt {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+
+        .pagination button {
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .pagination button:hover,
+        .pagination button.active {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .news-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .news-hero p {
+                font-size: 1.1rem;
+            }
+
+            .news-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .news-tab {
+                width: 200px;
+                text-align: center;
+            }
+
+            .news-item-header,
+            .news-item-content {
+                padding: 1.5rem;
+            }
+
+            .news-item {
+                flex-direction: column;
+                min-height: auto;
+            }
+
+            .news-item-thumbnail {
+                flex: 0 0 200px;
+            }
+
+            .news-item-details {
+                padding: 1rem;
+            }
+
+            .news-item-title {
+                font-size: 1.1rem;
+            }
+
+            .featured-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="static/logo.png" alt="Mars Tactics Logo">
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news" class="active">News</a></li>
+                    <li><a href="/media">Media</a></li>
+                    <li><a href="/guides">Guides</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="/guides">Guides</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- News Hero -->
+        <section class="news-hero">
+            <div class="container">
+                <h1>LATEST INFO</h1>
+                <p>Stay updated with the latest Mars Tactics news, announcements, events, and game updates. Get exclusive insights into the world of turn-based tactical strategy, XCOM-style combat, and planetary warfare on Mars.</p>
+            </div>
+        </section>
+
+        <!-- Featured News -->
+        <section class="featured-news">
+            <div class="container">
+                <h2 class="text-center mb-4">Featured News</h2>
+                <div class="featured-item">
+                    <img src="static/images/screenshots/Mars Tactics tactical combat.png" alt="Mars Tactics Official Release Announcement" class="featured-image">
+                    <div class="featured-content">
+                        <span class="featured-category">Latest</span>
+                        <h3 class="featured-title">Mars Tactics Official Release: May 2026</h3>
+                        <p class="featured-excerpt">We're thrilled to announce that Mars Tactics will launch in May 2026! This turn-based tactical strategy game combines XCOM-style combat with large-scale planetary strategy management. Mars Tactics is currently available for wishlist on Steam, GOG, and Epic Games Store.</p>
+                        <a href="https://store.steampowered.com/app/marstactics" class="read-more-btn" target="_blank" rel="noopener">WISHLIST NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script async="async" data-cfasync="false" src="https://pl28415232.effectivegatecpm.com/e2222f6a369d688c072426bfe3400c0b/invoke.js"></script>
+        <div id="container-e2222f6a369d688c072426bfe3400c0b"></div>
+        <!-- News Content -->
+        <section class="news-content">
+            <div class="container">
+                <!-- News Tabs -->
+                <div class="news-tabs">
+                    <button class="news-tab active" data-category="latest">Latest</button>
+                    <button class="news-tab" data-category="notice">Notice</button>
+                    <button class="news-tab" data-category="news">News</button>
+                    <button class="news-tab" data-category="security">Security</button>
+                    <button class="news-tab" data-category="event">Event</button>
+                </div>
+
+                <!-- News List -->
+                <div class="news-list">
+                    <!-- Latest News Items -->
+                    <div class="news-item" data-category="latest">
+                        <a href="https://www.ign.com/videos/mars-tactics-official-gameplay-trailer-2" class="news-item-body" target="_blank" rel="noopener" aria-label="Mars Tactics - Official Gameplay Trailer #2">
+                            <div class="news-item-thumbnail">
+                                <img src="static/images/news/news-1-pax-autocratica-release-date-trailer.jpg" alt="Mars Tactics - Official Gameplay Trailer #2" loading="lazy" width="320" height="180" style="max-width: 100%; height: auto;">
+                                <span class="video-duration"><time>1:00</time></span>
+                            </div>
+                            <div class="news-item-details">
+                                <div>
+                                    <div class="news-publish-date">Sep 29, 2025</div>
+                                    <h3 class="news-item-title">Mars Tactics - Official Gameplay Trailer #2</h3>
+                                    <div class="news-item-subtitle">Sep 29, 2025 - Check out new gameplay ahead of this retro-style tactical strategy game's launch next year.</div>
+                                    <div class="news-item-meta">
+                                        <span>Mars Tactics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item" data-category="latest">
+                        <a href="https://www.ign.com/videos/mars-tactics-official-gameplay-trailer-pc-gaming-show-2024" class="news-item-body" target="_blank" rel="noopener" aria-label="Mars Tactics - Official Gameplay Trailer">
+                            <div class="news-item-thumbnail">
+                                <img src="static/images/news/news-2-earth-from-another-sun-trailer.jpg" alt="Mars Tactics - Official Gameplay Trailer" loading="lazy" width="320" height="180" style="max-width: 100%; height: auto;">
+                                <span class="video-duration"><time>1:29</time></span>
+                            </div>
+                            <div class="news-item-details">
+                                <div>
+                                    <div class="news-publish-date">Jun 10, 2024</div>
+                                    <h3 class="news-item-title">Mars Tactics - Official Gameplay Trailer</h3>
+                                    <div class="news-item-subtitle">Jun 10, 2024</div>
+                                    <div class="news-item-meta">
+                                        <span>Mars Tactics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item" data-category="latest">
+                        <a href="https://www.ign.com/videos/mars-tactics-official-gameplay-trailer" class="news-item-body" target="_blank" rel="noopener" aria-label="Mars Tactics - Official Gameplay Trailer">
+                            <div class="news-item-thumbnail">
+                                <img src="static/images/news/news-3-earth-from-another-sun-gameplay.jpg" alt="Mars Tactics - Official Gameplay Trailer" loading="lazy" width="320" height="180" style="max-width: 100%; height: auto;">
+                                <span class="video-duration"><time>1:35</time></span>
+                            </div>
+                            <div class="news-item-details">
+                                <div>
+                                    <div class="news-publish-date">Oct 10, 2023</div>
+                                    <h3 class="news-item-title">Mars Tactics - Official Gameplay Trailer</h3>
+                                    <div class="news-item-subtitle">Oct 10, 2023</div>
+                                    <div class="news-item-meta">
+                                        <span>Mars Tactics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item" data-category="latest">
+                        <a href="https://www.ign.com/videos/mars-tactics-official-tacticon-2023-trailer" class="news-item-body" target="_blank" rel="noopener" aria-label="Mars Tactics' New Trailer Shows Off Pre-Alpha Gameplay">
+                            <div class="news-item-thumbnail">
+                                <img src="static/images/news/news-4-earth-from-another-sun-announcement.jpg" alt="Mars Tactics' New Trailer Shows Off Pre-Alpha Gameplay" loading="lazy" width="320" height="180" style="max-width: 100%; height: auto;">
+                                <span class="video-duration"><time>2:42</time></span>
+                            </div>
+                            <div class="news-item-details">
+                                <div>
+                                    <div class="news-publish-date">May 12, 2023</div>
+                                    <h3 class="news-item-title">Mars Tactics' New Trailer Shows Off Pre-Alpha Gameplay</h3>
+                                    <div class="news-item-subtitle">May 12, 2023 - Get a good look at the turn-based strategy game.</div>
+                                    <div class="news-item-meta">
+                                        <span>Mars Tactics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item" data-category="latest">
+                        <a href="https://www.ign.com/videos/mars-tactics-announcement-trailer" class="news-item-body" target="_blank" rel="noopener" aria-label="Mars Tactics - Announcement Trailer">
+                            <div class="news-item-thumbnail">
+                                <img src="static/images/news/news-1-pax-autocratica-release-date-trailer.jpg" alt="Mars Tactics - Announcement Trailer" loading="lazy" width="320" height="180" style="max-width: 100%; height: auto;">
+                                <span class="video-duration"><time>1:33</time></span>
+                            </div>
+                            <div class="news-item-details">
+                                <div>
+                                    <div class="news-publish-date">May 17, 2022</div>
+                                    <h3 class="news-item-title">Mars Tactics - Announcement Trailer</h3>
+                                    <div class="news-item-subtitle">May 17, 2022</div>
+                                    <div class="news-item-meta">
+                                        <span>Mars Tactics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="static/logo.png" alt="Mars Tactics Logo">
+                    </div>
+                    <p>Stay updated with the latest Mars Tactics news and announcements. Experience a unique turn-based tactical strategy game combining XCOM-style combat with large-scale planetary strategy on Mars.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="/guides">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="https://store.steampowered.com/app/marstactics" target="_blank" rel="noopener">Steam</a></li>
+                        <li><a href="https://store.epicgames.com/p/mars-tactics" target="_blank" rel="noopener">Epic Games</a></li>
+                        <li><a href="https://www.gog.com/game/mars_tactics" target="_blank" rel="noopener">GOG</a></li>
+                        <li><a href="https://www.youtube.com/@HoodedHorse" target="_blank" rel="noopener">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Mars Tactics. All rights reserved. | Stay updated with Mars Tactics news and experience turn-based tactical strategy on the red planet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/base.js?v=1.0.0"></script>
+    <script>
+        // News Tab Filtering
+        let activeCategory = 'latest'; // Store active category
+        
+        document.querySelectorAll('.news-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Update active category
+                activeCategory = tab.dataset.category;
+                
+                // Apply filtering
+                applyFiltersAndPagination();
+            });
+        });
+        
+        function applyFiltersAndPagination() {
+            const newsItems = document.querySelectorAll('.news-item');
+            
+            // Filter by category only (no pagination needed for 4 items)
+            newsItems.forEach(item => {
+                if (activeCategory === 'all' || item.dataset.category === activeCategory) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+
+        // Pagination
+        // News filtering (pagination removed as we only have 4 news items)
+        // Filter news by category
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.news-item, .featured-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
