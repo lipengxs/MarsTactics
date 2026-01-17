@@ -20,6 +20,10 @@ Disallow: /*?*
 # Sitemap location
 Sitemap: https://marstactics.com/sitemap.xml
 
+# Allow static resources including favicon
+Allow: /static/favicon.ico
+Allow: /favicon.ico
+
 # Crawl delay for Yandex (not supported by Google)
 User-agent: Yandex
 Crawl-delay: 10 
